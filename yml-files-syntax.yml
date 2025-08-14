@@ -1,0 +1,10 @@
+name: Ahmed Arafa
+
+family:
+  father: mohamed
+  mother: samia
+  children:
+    sons: 
+      - mohamed
+      - ahmed
+    daughter: sara
