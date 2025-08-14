@@ -1,6 +1,6 @@
 name: 01 Basics - Events
 
-on: push
+on: [push, pull_request]
 
 
 jobs:
