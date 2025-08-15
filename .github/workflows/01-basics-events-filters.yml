@@ -1,8 +1,8 @@
 name: 01 Basics - Events Filters
+
 on:
-  push:
-    paths:
-      - 'routes/web.php'
+  repository_dispatch:
+   types: [any-event-type-here-ya-arafa]
     
 
 
