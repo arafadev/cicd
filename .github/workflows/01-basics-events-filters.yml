@@ -1,9 +1,9 @@
 name: 01 Basics - Events Filters
 
 on:
-  repository_dispatch:
-   types: [any-event-type-here-ya-arafa]
-    
+  schedule:
+    - cron: '*/5 * * * *' # every 5 minutes
+
 
 
 jobs:
