@@ -10,4 +10,4 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: learn about configration
-        run: echo ${{ vars.MY_CONFIG_VALUE }}
+        run: echo ${{ secrets.PASSWORD }}
