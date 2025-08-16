@@ -1,5 +1,5 @@
 name: 01 Basics - Events contexts 
-run-name: Ahmed Arafa 
+run-name: ${{ actor }} Ahmed Arafa 
 
 on:
   push:
