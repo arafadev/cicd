@@ -1,0 +1,16 @@
+name: 07 Basics - conditions 
+
+on:
+  pull_request:
+    types:
+      - closed
+    
+
+
+
+jobs:
+  print-hello-world:
+    runs-on: ubuntu-latest
+    steps:
+      - name: learn about conditions
+        run: echo "This is step learn about conditions!"
