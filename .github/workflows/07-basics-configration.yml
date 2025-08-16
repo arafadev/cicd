@@ -1,0 +1,13 @@
+name: 07 Basics - configration 
+
+on:
+  workflow_dispatch:
+ 
+
+
+jobs:
+  print-hello-world:
+    runs-on: ubuntu-latest
+    steps:
+      - name: learn about configration
+        run: echo ${{ vars.MY_CONFIG_VALUE }}
