@@ -1,4 +1,4 @@
-name: 07 Basics - configration 
+name: 07 Basics - needs
 
 on:
   workflow_dispatch:
@@ -6,8 +6,20 @@ on:
 
 
 jobs:
-  print-hello-world:
+  Build:
     runs-on: ubuntu-latest
     steps:
-      - name: learn about configration
-        run: echo ${{ secrets.PASSWORD }}
+      - name: Build Project
+        run: exit 1
+  Test:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Run Tests
+        run: echo "Running tests"
+
+  Deploy:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Deploy Project
+        run: echo "Deploying project"
+      
