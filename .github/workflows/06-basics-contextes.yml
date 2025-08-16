@@ -1,0 +1,14 @@
+name: 01 Basics - Events contexts 
+
+on:
+  push:
+    
+
+
+
+jobs:
+  print-hello-world:
+    runs-on: ubuntu-latest
+    steps:
+      - name: step events con
+        run: echo "This is step events con!"
