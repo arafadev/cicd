@@ -2,7 +2,6 @@ name: 07 Basics - needs
 
 on:
   workflow_dispatch:
- 
 
 jobs:
   Build:
@@ -13,6 +12,4 @@ jobs:
 
     steps:
       - name: Build project
-        uses: echo "Build job running on ${{ matrix.os }}"
-
-      
+        run: echo "Build job running on ${{ matrix.os }}"
