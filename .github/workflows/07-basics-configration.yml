@@ -4,24 +4,14 @@ on:
   workflow_dispatch:
  
 
-
 jobs:
   Build:
-    runs-on: ubuntu-latest
+    runs-on: ${{ matrix.os }}
+    strategy:
+      matrix:
+        os: [ubuntu-latest, windows-latest]
     steps:
-      - name: Build Project
-        run: exit 1
-  Test:
-    runs-on: ubuntu-latest
-    needs: Build
-    steps:
-      - name: Run Tests
-        run: echo "Running tests"
+      - name: Build project
+        uses: echo "Build job running on ${{ matrix.os }}"
 
-  Deploy:
-    needs: [Build, Test]
-    runs-on: ubuntu-latest
-    steps:
-      - name: Deploy Project
-        run: echo "Deploying project"
       
